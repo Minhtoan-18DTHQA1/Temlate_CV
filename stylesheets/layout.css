@@ -1,15 +1,7 @@
-/*
-* Theme Name: Vido - Responsive vCard & Portfolio Template
-* Author: lmtheme (Linar Miftakhov)
-* Author URL: http://themeforest.net/user/lmtheme
-* Version: 1.0
-*/
 
 @import url("http://fonts.googleapis.com/css?family=Oswald:300,400,700");
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300");
 
-/* #Reset & Basics (Inspired by E. Meyers)
-================================================== */
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -33,7 +25,6 @@
 		border-collapse: collapse;
 		border-spacing: 0; }
 		
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -48,9 +39,6 @@
     *zoom: 1;
 }
 		
-/* ============================================================================= 
-1. General 
-============================================================================= */
 body{
 	font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
 	background-color:#FFF;
@@ -143,12 +131,6 @@ small { font-size: 80%; }
 	font-weight: 400;
 }
 
-
-
-
-/* ============================================================================= 
-2. Navigation Menu
-============================================================================= */
 .menu {
 	position: fixed;
 	display: block;
@@ -210,18 +192,8 @@ small { font-size: 80%; }
    margin-right: 25px;
 }
 	  
-
-	
-
-/* ============================================================================= 
-3. Subpages
-============================================================================= */	
-	
-/* ===================================== 
-3.1 Home Subpage
-===================================== */	
 #home {
-    height: 980px;
+    height: auto;
 	background-image: url(../images/bg.png);
 	background-color: #fff;
 	border-bottom: 2px solid #dddddd;
@@ -256,8 +228,6 @@ small { font-size: 80%; }
 	margin-top: 5px;
 }
 
-
-/* Social Icons */
 .social_icons {
 	display: block;
 	text-align: center;
@@ -291,19 +261,13 @@ small { font-size: 80%; }
     transform: rotateY(360deg);
 }
 
-/* ===================================== 
-3.2 About Me Subpage
-===================================== */
 #about_me {
 	background-image: url(../images/bg.png);
 	background-color: #e6e6e6;
 	border-bottom: 2px solid #dddddd;
 	height: 100%;
 }
-
-
-
-/* personal info */   
+  
 ul.personal-info { 
     margin: 0; 
 	padding-left: 0; 
@@ -335,17 +299,13 @@ ul.personal-info .value {
     margin-left: 10px; 
 }
 
-ul.personal-info .available { /* Font Color For Freelance Status = Available */
+ul.personal-info .available { 
     color: #6f803b; 
 }
 
-ul.personal-info .not_available { /* Font Color For Freelance Status = Not Available */
-    color: #803b3b; 
+ul.personal-info .not_available {
 }
 
-
-
-/* my web skills block */
 .skill_info {
     height: auto;
 }
@@ -427,8 +387,6 @@ ul.personal-info .not_available { /* Font Color For Freelance Status = Not Avail
 	color: #666;
 }
 		
-
-/* testimonials block */
 .cbp-qtrotator {
 	position: relative;
     margin-bottom: 10px;
@@ -501,9 +459,6 @@ ul.personal-info .not_available { /* Font Color For Freelance Status = Not Avail
 	margin-right: 20px;
 }
 
-
-
-/* services block */
 .service {
     margin: 0 -10px 0 -10px;
     text-align: center;
@@ -534,10 +489,6 @@ ul.personal-info .not_available { /* Font Color For Freelance Status = Not Avail
     transform: rotateY(360deg);
 }
 
-	
-/* ===================================== 
-3.3 Resume Subpage
-===================================== */
 #resume{
 	background-image: url(../images/bg.png);
 	border-bottom: 2px solid #dddddd;
@@ -615,17 +566,6 @@ ul.personal-info .not_available { /* Font Color For Freelance Status = Not Avail
 
 .eventDetail h6 {
     color: #ccc;
-}
-
-
-
-/* ===================================== 
-3.4 Portfolio Subpage
-===================================== */
-#portfolio {
-	background-image: url(../images/bg.png);
-	background-color: #f2f2f2;
-	border-bottom: 2px solid #dddddd;
 }
 
 .og-grid {
@@ -809,11 +749,6 @@ ul.personal-info .not_available { /* Font Color For Freelance Status = Not Avail
 	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
 }
 
-
-
-/* ===================================== 
-3.5 Contacts Subpage
-===================================== */
 #contacts {
 	background-image: url(../images/bg.png);
 	padding-bottom: 20px;
@@ -835,7 +770,6 @@ input[type="text"]
 textarea	{ width:100%;}
 input[type="submit"]	{ padding: 0; width: 100%; margin: 5px 0 0; }
 
-/*FORM ELEMENTS*/
 label { 
     cursor: pointer;
 	margin-top: 7px;
@@ -888,7 +822,7 @@ textarea:focus{
 	transition: all .10s ease-in;
 }
 
-/* Submit Button */
+
 input[type="submit"] 		{
 	color: #FFF;
 	width: 140px;
@@ -912,7 +846,6 @@ input[type="submit"]:hover 		{
      transition: all 0.2s linear;
 }
 
-/* CSS for Error notification */
 .notification_error{
     border: 1px solid #f1dfc5;
 	width: 100%;
@@ -925,7 +858,6 @@ input[type="submit"]:hover 		{
     margin-bottom: 5px;
 }
 
-/* CSS for Successfully sent notification */
 .notification_ok{
     border: 1px #cbcf8e solid;
 	width: 100%;
@@ -937,9 +869,6 @@ input[type="submit"]:hover 		{
 	margin-bottom:5px;
 }
 
-
-
-/* Gogle Map Block*/
 .gmap{
     width: 100%;
     max-width: 540px;
@@ -953,17 +882,9 @@ input[type="submit"]:hover 		{
     max-width: 100%;
 }
 
-
-
-/* ============================================================================= 
-4. Media Queries 
-============================================================================= */
-
-	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
 		}
 
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 	.og-grid li {
     width:223px;
@@ -984,7 +905,6 @@ input[type="submit"]:hover 		{
     }	
 	}
 	
-	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
     #home {
     height: 670px;
@@ -1063,8 +983,7 @@ input[type="submit"]:hover 		{
     margin-right: 20px;
     }
     }
-	
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
 	.subpage_title{
     text-align: center;
@@ -1088,7 +1007,6 @@ input[type="submit"]:hover 		{
     }
     }
 
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
     .og-grid li {
 	display: inline-block;
